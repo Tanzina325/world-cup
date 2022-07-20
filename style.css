@@ -120,7 +120,7 @@ body{font-family: 'Roboto', sans-serif;}
     padding: 5px 50px 5px 50px;}
     .feature{grid-template-columns: 1fr 1fr;}
     .view{display: block;}
-    footer{height: 70vh;
+    footer{height: 80vh;
     }
     footer .text{font-size:24px;
     flex-wrap: wrap;
@@ -134,7 +134,7 @@ nav li{padding:5px 10px 5px 10px ; text-align: left;
 margin: 20px 50px 20px 50px;}
 .feature{grid-template-columns: 1fr;}
 .view{display: none;}
-footer{height: 80vh;}
+footer{height: 100vh;}
 footer .text{flex-direction: column;
 flex-wrap: nowrap;}
 }
