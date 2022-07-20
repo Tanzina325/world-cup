@@ -1,6 +1,4 @@
-*{margin: 0;
-padding:0;
-box-sizing: border-box;}
+
 .banner{display: flex;
 justify-content: center;
 align-items:center;height:800px}
@@ -21,7 +19,13 @@ padding-bottom:30px ;}
 background-color: red;
 padding: 5px 20px 5px 20px;
 border-radius: 5px;
+transition: background 2s ease-in-out ;
+animation:mymove 5s ease-in infinite;
+position: relative;
 color: white;}
+@keyframes mymove{from {left:0px;}
+to {right:50px;}}
+.nav a:hover{background: none;}
     .card-img{width:60%;
     padding-left:50px;}
     .card-img img{width: 70%;}
@@ -37,13 +41,14 @@ margin-left: 120px;}
 height: 280px;width:300px;
 border-radius: 10px;
 margin-top: -680px;}
+nav ul{text-align:center;}
     nav li{list-style: none;width:200px;
         text-align: center;
         padding:10px;
         font-size: large;
     border:2px solid black;
     border-radius:5px;
-margin: 40px 20px;
+margin: 40px 100px 40px 0px;
     background-color:white ;
 }
 nav .blogs{background-color: red;}
@@ -68,6 +73,14 @@ padding-bottom: 20px;}
 grid-template-columns: repeat(3,1fr);
 justify-content: center;
 grid-gap:20px;}
+.view a{padding: 20px 30px 20px 30px;
+text-decoration: none;
+background-color: brown;
+color:white;
+    font-size: x-large;}
+.view{text-align: right; width: 80%;
+margin-bottom: 70px;
+display:none ;}
 footer{height:400px;
 width: 100%;
 background-color: black;
@@ -88,26 +101,52 @@ margin:10px 70px 10px 70px;}
     }
     .card{width:100%;
     height:100vh ;
-flex-direction: column-reverse;
-align-items: flex-start;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+gap: 50px;
 margin:0 auto;}
 .card-text{
 width:100%;
-height: 50%;
-padding: 0px 80px 0 80px;}
+height: 40%;
+padding: 50px 80px 0 80px;}
+.nav{text-align: center;}
 .card-text p{padding-right: 30px;
 font-size:24px ;}
 .card-text h1{font-size: 40px;}
 .card-img{width:100%;
-height: 50%;}
+height: 40%;
+}
 .aside{margin-top: -3500px;
     margin-right:-400px;
 background-color: white;}
 .feature{grid-template-columns: 1fr;
 margin-top: 500px;}
 .photo p{padding-right: 20px;}
-footer{height: 50vh;}
+footer{height: 100vh;}
 footer .text{flex-direction: column;
 gap: 15px;}
+.horizontal{margin-right: -20px;}
+nav .blogs{background-color: green;}
 }
+@media only screen and (min-width:688px) and (max-width:992px){
+    .banner{width: 80%;
+        height: 60vh;
+    }
+    .card{width: 100%;
+    height:100% ;}
+    nav ul{display:flex;}
+    nav li{padding-left: 50px;
+    padding-right:70px ;}
+    .aside{margin-top: -1700px;
+    margin-right: -300px;
+    margin-left: -100px;
+background-color:white ;}
+    .feature{grid-template-columns: 1fr 1fr;
+    margin-top: 200px;
+margin-right: 100px;}
+.view{display: block;}
+footer{width: 80%;}
+}
+
     
