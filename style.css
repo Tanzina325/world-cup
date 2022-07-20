@@ -46,6 +46,7 @@ margin-top: -680px;}
 margin: 40px 20px;
     background-color:white ;
 }
+nav .blogs{background-color: red;}
     nav li a{text-decoration: none;
     color: black;}
 .photo img{width: 100%;}
@@ -67,4 +68,16 @@ padding-bottom: 20px;}
 grid-template-columns: repeat(3,1fr);
 justify-content: center;
 grid-gap:20px;}
-    
+footer{height:50vh;
+width: 100%;
+background-color: black;
+color:white ;
+text-align: center;
+}  
+footer h1{padding: 60px;}
+footer .text{display: flex;
+justify-content: space-evenly;
+margin: 20px;
+font-size: 20px;
+}  
+.fa-facebook,.fa-youtube,.fa-twitter-square{margin: 50px;}
