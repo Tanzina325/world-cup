@@ -139,8 +139,11 @@ body{font-family: 'Roboto', sans-serif;}
     .view{display: block;}
     footer{height: 80vh;
     }
-    footer .text{font-size:24px;
-    flex-wrap: wrap;
+    footer h1{padding: 30px;}
+        footer .text{
+margin: 10px;
+        font-size: 24px;
+         flex-wrap: wrap;
 gap: 20px;}
 }
 /* ------media queries for tablets ends----- */
@@ -154,9 +157,14 @@ nav li{padding:5px 10px 5px 10px ; text-align: left;
 margin: 20px 50px 20px 50px;}
 .feature{grid-template-columns: 1fr;}
 .view{display: none;}
-footer{height: 100%;}
+footer{height: 100vh;}
 footer .text{flex-direction: column;
 flex-wrap: nowrap;}
+footer h1{padding: 30px;}
+        footer .text{
+margin: 10px;
+        font-size: 24px;
+         }
 }
 /* ----media queries for mobiles ends--- */
 

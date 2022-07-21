@@ -124,11 +124,15 @@ footer{height:400px;
         .feature{grid-template-columns: 1fr 1fr;
         margin-right: 80px;}
         .view{display: block;}
-        footer{height: 70vh;
+        footer{height: 80vh;
         }
-        footer .text{font-size:24px;
-        flex-wrap: wrap;
-    gap: 20px;}
+        footer h1{padding: 30px;}
+        footer .text{
+margin: 10px;
+        font-size: 24px;
+         flex-wrap: wrap;
+gap: 20px;}
+        
     }
     /* ---media queries for tablets ends--- */
     /* ---media queries starts for mobile---- */
@@ -142,8 +146,12 @@ footer{height:400px;
         .feature{grid-template-columns: 1fr;
         margin-left: 50px;}
         .view{display: none;}
-        footer{height: 100%;}
-        footer .text{flex-direction: column;
+        footer{height: 100vh;}
+        footer h1{padding: 30px;}
+        footer .text{
+margin: 10px;
+        font-size: 24px;
+         flex-direction: column;
         flex-wrap: nowrap;}
         }
         /* -media queries for mobiles ends-- */
