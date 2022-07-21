@@ -1,5 +1,7 @@
 *{padding:0;box-sizing: 0;}
 body{font-family: 'Roboto', sans-serif;}
+
+/* -------header section starts----------- */
     .banner{display: flex;
         justify-content: center;
         align-items:center;
@@ -41,6 +43,8 @@ body{font-family: 'Roboto', sans-serif;}
         margin-bottom: 50px;
     
     }
+   /* ------- header section ends-------- */
+   /* ------Side bar menu starts------ */
     .aside{background-color: black;
         height: 280px;width:300px;
         border-radius: 10px;
@@ -59,7 +63,11 @@ body{font-family: 'Roboto', sans-serif;}
     nav li a{text-decoration: none;
         color: black;
     }
-    .match{background-color: red;}
+    .match{background-color: white;}
+    .match:hover{background-color: red;}
+   /* --------- side bar menu ends------ */
+
+   /* -------players cards starts------- */
         .feature{display: grid;
             grid-template-columns: repeat(3,1fr);
             justify-content: center;
@@ -79,6 +87,11 @@ body{font-family: 'Roboto', sans-serif;}
     .fa-rocketchat{padding-left: 20px;
     padding-bottom: 20px;}
     .article{margin-left: 20px;}
+
+    /* ----player cards ends---- */
+
+    /* -------footer session starts----- */
+    
     footer{height:400px;
         width: 100%;
         background-color: black;
@@ -103,7 +116,11 @@ body{font-family: 'Roboto', sans-serif;}
         }  
          .horizontal{border: 1px solid gray;
         margin:10px 70px 10px 70px;}
-        .fa-facebook,.fa-youtube,.fa-twitter-square{margin: 50px;}
+        .fa-facebook,.fa-youtube,.fa-twitter-square{margin:20px;}
+
+        /* -----footer session ends----- */
+
+        /* ------media queries starts for tablet----- */
 @media only screen and (max-width:768px){
     .banner{ display:block;margin: 0 auto;
         height:50%;
@@ -126,6 +143,9 @@ body{font-family: 'Roboto', sans-serif;}
     flex-wrap: wrap;
 gap: 20px;}
 }
+/* ------media queries for tablets ends----- */
+
+/* ------media queries starts for mobile------ */
 @media only screen and (max-width:412px){
 .card{flex-direction: column;}
 .card-text{height: 50%;}
@@ -134,10 +154,11 @@ nav li{padding:5px 10px 5px 10px ; text-align: left;
 margin: 20px 50px 20px 50px;}
 .feature{grid-template-columns: 1fr;}
 .view{display: none;}
-footer{height: 100vh;}
+footer{height: 95%;}
 footer .text{flex-direction: column;
 flex-wrap: nowrap;}
 }
+/* ----media queries for mobiles ends--- */
 
 
     

@@ -1,6 +1,7 @@
 *{
 padding:0;box-sizing: 0;}
 body{font-family: 'Roboto', sans-serif;}
+/* -------header section starts----------- */
 .banner{display: flex;
     justify-content: center;
     align-items:center;
@@ -34,6 +35,9 @@ to {right:50px;}}
     padding-left:50px;}
     .card-img img{width: 100%;}
     .fa-angle-right{padding-left:5px ;}
+    /* ------ header section ends------ */
+
+    /* ----Side bar menu starts----- */
     .container{display: flex;
         justify-content: space-evenly;
         margin-top: 50px;
@@ -60,7 +64,10 @@ to {right:50px;}}
     nav li a{text-decoration: none;
         color: black;
     }
-    .blogs{background-color: red;}
+    .blogs{background-color: white;}
+    .blogs:hover{background-color: red;}
+    /* ----- side bar menu ends---- */
+    /* -----players cards starts----- */
         .feature{display: grid;
             grid-template-columns: repeat(3,1fr);
             justify-content: center;
@@ -79,6 +86,8 @@ to {right:50px;}}
                 .view a{text-decoration: none;
                 color:white ;
             font-size: x-large;}
+            /* ----player cards ends--- */
+            /* -----footer session starts */
 footer{height:400px;
     width: 100%;
     background-color: black;
@@ -94,7 +103,10 @@ footer{height:400px;
     }  
      .horizontal{border: 1px solid gray;
     margin:10px 70px 10px 70px;}
-    .fa-facebook,.fa-youtube,.fa-twitter-square{margin: 50px;}
+    .fa-facebook,.fa-youtube,.fa-twitter-square{margin: 25px;}
+    /* ---footer session ends--- */
+
+    /* ---media queries starts for tablet-- */
     @media only screen and (max-width:768px){
         .banner{ display:block;margin: 0 auto;
             height:50%;
@@ -118,6 +130,8 @@ footer{height:400px;
         flex-wrap: wrap;
     gap: 20px;}
     }
+    /* ---media queries for tablets ends--- */
+    /* ---media queries starts for mobile---- */
     @media only screen and (max-width:412px){
         .card{flex-direction: column;}
         .card-text{height: 50%;}
@@ -128,7 +142,8 @@ footer{height:400px;
         .feature{grid-template-columns: 1fr;
         margin-left: 50px;}
         .view{display: none;}
-        footer{height: 80vh;}
+        footer{height: 95%;}
         footer .text{flex-direction: column;
         flex-wrap: nowrap;}
         }
+        /* -media queries for mobiles ends-- */
