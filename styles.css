@@ -142,7 +142,7 @@ footer{height:400px;
         .feature{grid-template-columns: 1fr;
         margin-left: 50px;}
         .view{display: none;}
-        footer{height: 95%;}
+        footer{height: 100%;}
         footer .text{flex-direction: column;
         flex-wrap: nowrap;}
         }
