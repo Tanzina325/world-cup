@@ -160,10 +160,11 @@ margin: 20px 50px 20px 50px;}
 footer{height: 100vh;}
 footer .text{flex-direction: column;
 flex-wrap: nowrap;}
-footer h1{padding: 30px;}
+footer h1{padding: 10px;
+font-size: 20px;}
         footer .text{
-margin: 10px;
-        font-size: 24px;
+margin: 5px;
+        font-size: 10px;
          }
 }
 /* ----media queries for mobiles ends--- */
